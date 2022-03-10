@@ -137,6 +137,9 @@ const createPost = (post) => {
 };
 
 const showPosts = (posts) => {
+  document.getElementById("liked-text").style.display = "none";
+  document.getElementById("reported-text").style.display = "none";
+
   const productsContainer = document.getElementById("posts");
   productsContainer.innerHTML = "";
 
